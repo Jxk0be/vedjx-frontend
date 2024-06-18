@@ -25,8 +25,8 @@
                 })
             })
 
-            await delay(2.75)
-            if (response?.status === 200) goto("/")
+            await delay(1.5)
+            if (response?.status === 200) goto("/login")
         }
         catch(error) {
             console.log(error)
