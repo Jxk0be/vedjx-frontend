@@ -15,7 +15,7 @@
         try {
             const emailToken = $page.url.searchParams.get('emailToken')
             
-            response = await fetch(`http://${PUBLIC_API_HOST}/api/user/verify-email`, {
+            response = await fetch(`${PUBLIC_API_HOST}/api/user/verify-email`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
