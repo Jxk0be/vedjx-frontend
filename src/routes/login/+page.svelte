@@ -30,7 +30,7 @@
         loginBody.password = password
 
         try {
-            const response = await fetch(`http://${PUBLIC_API_HOST}/api/user/login`, {
+            const response = await fetch(`${PUBLIC_API_HOST}/api/user/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
