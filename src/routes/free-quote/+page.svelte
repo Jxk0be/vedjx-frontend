@@ -1,1 +1,1 @@
-<h1 class="font-bold pt-[70px] text-red-400 text-[100px]">Free Quote Page</h1>
+<h1 class="font-bold pt-[70px] text-[100px]">Free Quote Page</h1>
