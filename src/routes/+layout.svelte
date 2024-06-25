@@ -6,7 +6,7 @@
 <div class="w-full flex items-center fixed z-20 custom-gradient">
     <div class="mx-auto max-w-[1500px] px-5 w-full">
         <div class="flex justify-between text-[20px]  items-center font-semibold w-full h-[70px]">
-            <a class="font-bold min-w-[100px] text-xl" href="/" on:click={() => handleClose()}>
+            <a class="font-bold min-w-[100px] text-xl" href="/">
                 {@html Logo}
             </a>
             <div class="w-auto h-full flex justify-between items-center">
