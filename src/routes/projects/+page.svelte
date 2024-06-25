@@ -1,0 +1,1 @@
+<h1 class="font-bold pt-[70px] text-red-400 text-[100px]">Projects Page</h1>
