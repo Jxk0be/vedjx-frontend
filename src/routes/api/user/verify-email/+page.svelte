@@ -35,9 +35,9 @@
 </script>
 
 {#if response?.status === 400}
-    <h1 class="font-bold text-red-400 text-[100px]">Failed</h1>
+    <h1 class="font-bold text-red-400 pt-[90px] md:pt-[100px] text-[100px]">Failed</h1>
 {:else if response?.status === 200}
-    <h1 class="font-bold text-red-400 text-[100px]">Success</h1>
+    <h1 class="font-bold text-red-400 pt-[90px] md:pt-[100px] text-[100px]">Success</h1>
 {:else}
-    <h1 class="font-bold text-red-400 text-[100px]">Verifying</h1>
+    <h1 class="font-bold text-red-400 pt-[90px] md:pt-[100px] text-[100px]">Verifying</h1>
 {/if}

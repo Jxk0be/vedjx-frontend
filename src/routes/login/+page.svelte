@@ -124,27 +124,27 @@
 </script>
 
 {#if success}
-    <h1>Success</h1>
+    <h1 class="pt-[90px] md:pt-[100px]">Success</h1>
 {:else}
-    <div class='w-full h-screen md:pt-[100px] pt-[90px] flex justify-center items-center'>
-        <div class="bg-[#e2e0df] md:w-1/2 md:h-1/2 flex w-full h-full justify-center flex-col items-center text-[#4B4B4B] rounded-xl">
+    <div class='w-full text-white custom-gradient h-screen md:pt-[100px] flex justify-center items-center'>
+        <div class="md:w-full md:h-1/2 flex w-full h-full justify-center flex-col items-center rounded-xl">
             <div class="flex justify-center items-center drop-shadow-md border-b-2 md:w-1/2 w-2/3 border-[#adb0ae]">
                 <h1 class="text-[40px] font-bold">Login</h1>
             </div>
     
             {#if verifyEmailError}
-                <form class="mt-2 flex flex-col items-center w-2/3 md:w-1/2">
+                <form class="mt-2 flex text-black flex-col items-center w-2/3 md:w-1/2">
                     <input bind:value={resendEmail} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="Username or Email" type="text" />
                     <button class="mb-4 rounded-md w-full py-1 font-semibold bg-[#FF8200] duration-150 hover:bg-[#4B4B4B] hover:text text-white" type="submit" on:click={() => resendVerification()}>Resend Verification Email</button>
                 </form>
             {:else}
-                <form class="mt-2 flex flex-col items-center w-2/3 md:w-1/2">
+                <form class="mt-2 text-black flex flex-col items-center w-2/3 md:w-1/2">
                     <input bind:value={usernameOrEmail} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="Username or Email" type="text" />
                     <input bind:value={password} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="Password" type="password" />
                     <button class="mb-4 rounded-md w-full py-1 font-semibold bg-[#4B4B4B] duration-150 hover:bg-[#FF8200] hover:text text-white" type="submit" on:click={() => apiLogin()}>Login</button>
                 </form>
             {/if}
-            <h1 class="cursor-pointer text-slate-800 hover:text-[#FF8200] duration-150"><a href="/register" alt="register page">Don't have an account yet?</a></h1>
+            <h1 class="cursor-pointer"><a href="/register" alt="register page">Don't have an account yet?</a></h1>
         </div>
     </div>
 {/if}

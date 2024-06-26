@@ -83,15 +83,15 @@
 {/if}
 
 {#if success}
-    <h1>Success</h1>
+    <h1 class="pt-[90px] md:pt-[100px]">Success</h1>
 {:else}
-    <div class='w-full h-screen md:pt-[100px] pt-[90px] flex justify-center items-center'>
-        <div class="bg-[#e2e0df] md:w-1/2 md:h-1/2 flex md:min-w-[500px] w-full h-full justify-center flex-col items-center text-[#4B4B4B] rounded-xl">
+    <div class='w-full custom-gradient h-screen text-white md:pt-[100px] flex justify-center items-center'>
+        <div class="md:w-1/2 md:h-1/2 flex md:min-w-[500px] w-full h-full justify-center flex-col items-center rounded-xl">
             <div class="flex justify-center items-center drop-shadow-md md:min-w-[400px] border-b-2 md:w-1/2 w-2/3 border-[#adb0ae]">
                 <h1 class="text-[40px] font-bold">Register</h1>
             </div>
     
-            <form class="mt-2 flex flex-col items-center w-2/3 md:w-1/2 md:min-w-[400px]">
+            <form class="mt-2 flex flex-col text-black items-center w-2/3 md:w-1/2 md:min-w-[400px]">
                 <div class="flex flex-row w-full gap-x-3">
                     <input bind:value={firstName} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="First Name" type="text" />
                     <input bind:value={lastName} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="Last Name" type="text" />
@@ -99,14 +99,14 @@
                 <input bind:value={username} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="Username" type="text" />
                 <input bind:value={email} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="Email" type="text" />
                 <input bind:value={password} class="outline-none placeholder-gray-500 placeholder-opacity-50 mb-4 w-full rounded-md pl-2 py-1 text-[20px]" placeholder="Password" type="password" />
-                <input bind:value={confirmPass} class={`${confirmPass !== "" ? 'mb-0' : 'mb-4'} outline-none placeholder-gray-500 placeholder-opacity-50 w-full rounded-md pl-2 py-1 text-[20px]`} placeholder="Confirm Password" type="password" />
+                <input bind:value={confirmPass} class={`${confirmPass !== "" ? 'mb-5' : 'mb-4'} outline-none placeholder-gray-500 placeholder-opacity-50 w-full rounded-md pl-2 py-1 text-[20px]`} placeholder="Confirm Password" type="password" />
                 
                 {#if confirmPass !== ""}
-                    <small id="passwordMatch" class={`${passMatch ? 'text-green-700' : 'text-red-600'} text-xs text-gray-500 mb-4`}>{passMatch ? 'Passwords match' : 'Passwords do not match'}</small>
+                    <small id="passwordMatch" class={`${passMatch ? 'text-green-700' : 'text-red-600'} text-xs px-1 rounded-md bg-white text-gray-500 mb-4`}>{passMatch ? 'Passwords match' : 'Passwords do not match'}</small>
                 {/if}
                     <button class="mb-4 rounded-md w-full py-1 font-semibold bg-[#4B4B4B] duration-150 hover:bg-[#FF8200] hover:text text-white" type="submit" on:click={() => apiRegister()}>Register</button>
             </form>
-            <h1 class="cursor-pointer text-slate-800 hover:text-[#FF8200] duration-150"><a href="/login" alt="register page">Already have an account?</a></h1>
+            <h1 class="cursor-pointer"><a href="/login" alt="register page">Already have an account?</a></h1>
         </div>
     </div>
 {/if}
