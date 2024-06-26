@@ -85,7 +85,7 @@
 {#if success}
     <h1>Success</h1>
 {:else}
-    <div class='w-full h-screen md:pt-[70px] pt-[60px] flex justify-center items-center'>
+    <div class='w-full h-screen md:pt-[140px] pt-[60px] flex justify-center items-center'>
         <div class="bg-[#e2e0df] md:w-1/2 md:h-1/2 flex md:min-w-[500px] w-full h-full justify-center flex-col items-center text-[#4B4B4B] rounded-xl">
             <div class="flex justify-center items-center drop-shadow-md md:min-w-[400px] border-b-2 md:w-1/2 w-2/3 border-[#adb0ae]">
                 <h1 class="text-[40px] font-bold">Register</h1>

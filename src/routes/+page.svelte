@@ -8,7 +8,7 @@
          style={`background-image: url(${HeroImage});`}>
         <div class="absolute inset-0 bg-slate-900 bg-opacity-90"></div>
         <div class="relative z-10 text-center text-white">
-            <div class="font-bold min-w-[400px] py-[10px]">
+            <div class="font-bold md:min-w-[400px] min-w-[300px] py-[10px]">
                 {@html Logo}
             </div>
             <p class="text-lg md:text-xl font-bold">Based in Knoxville, TN</p>
