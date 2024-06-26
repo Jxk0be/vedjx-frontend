@@ -26,7 +26,7 @@
 
 </script>
 
-<div class="w-full flex items-center fixed z-40 custom-gradient">
+<div class="w-full text-white flex items-center fixed z-40 custom-gradient">
     <div class="mx-auto max-w-[1500px] px-9 w-full">
         <div class="flex justify-between text-[20px] items-center font-semibold w-full h-[140px]">
             <a class="font-bold min-w-[200px] py-[10px]" href="/">
