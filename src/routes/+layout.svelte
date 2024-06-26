@@ -1,6 +1,6 @@
 <script>
     import "../app.css";
-    import Logo from '$lib/data/LogoWhite.svg?raw';
+    import Logo from '$lib/data/LogoText.svg?raw';
     import Icon from '@iconify/svelte';
 
     let menuOpen = false;
@@ -28,8 +28,8 @@
 
 <div class="w-full text-white flex items-center fixed z-40 custom-gradient">
     <div class="mx-auto max-w-[1500px] px-9 w-full">
-        <div class="flex justify-between text-[20px] items-center font-semibold w-full h-[140px]">
-            <a class="font-bold min-w-[200px] py-[10px]" href="/">
+        <div class="flex justify-between text-[20px] items-center font-semibold w-full md:h-[100px] h-[90px]">
+            <a class="font-bold md:min-w-[200px] min-w-[170px] py-[10px]" href="/">
                 {@html Logo}
             </a>
             <div class="w-auto h-full lg:flex hidden justify-between items-center">
@@ -53,7 +53,7 @@
     <button class={`${menuOpen ? 'left-0' : 'left-[-100%]'} lg:hidden z-20 overflow-x-hidden overflow-y-hidden w-full cursor-auto h-screen fixed top-0 left-0 bg-[#222222]/50`} on:click={() => handleMenu()}></button>
 {/if}
 
-<div class={`transition-all z-30 text-[105%] uppercase custom-gradient font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-300 ${menuOpen ? 'right-0' : 'md:right-[-40%] right-[-250px]'} fixed pt-[140px] w-[250px] top-0 md:w-[40%] h-full border-l border-gray-600`}>
+<div class={`transition-all z-30 text-[105%] uppercase custom-gradient font-semibold min-w-[250px] text-white lg:hidden ease-in-out duration-300 ${menuOpen ? 'right-0' : 'md:right-[-40%] right-[-250px]'} fixed pt-[90px] md:pt-[100px] w-[250px] top-0 md:w-[40%] h-full border-l border-gray-600`}>
     <ul class="text-left font-bold">
         <a href="/" on:click={() => handleClose()}>
             <li class="p-5 border-b border-gray-600 duration-150 ease-in-out transition-all hover:text-[#61BEFF]">Home</li>

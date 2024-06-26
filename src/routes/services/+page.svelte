@@ -1,1 +1,1 @@
-<h1 class="font-bold pt-[140px] text-[100px]">Services Page</h1>
+<h1 class="font-bold pt-[90px] md:pt-[100px] text-[40px]">Services Page</h1>
